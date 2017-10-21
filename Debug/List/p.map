@@ -1,0 +1,69 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+tmp                                                                               0x026D       4
+temp_data                                                                         0x0271      40
+data                                                                              0x0299      10
+recieve                                                                           0x02A3      40
+numbers                                                                           0x02CB       6
+temps                                                                             0x02D1       3
+a                                                                                 0x02D4       2
+b                                                                                 0x02D6       2
+temp_index                                                                        0x02D8       2
+d                                                                                 0x02DA       2
+tempreture                                                                        0x02DC       2
+rx_buffer                                                                         0x02DE       8
+rx_rd_index                                                                       0x02E6       1
+rx_counter                                                                        0x02E7       1
+tx_buffer                                                                         0x02E8       8
+tx_wr_index                                                                       0x02F0       1
+tx_rd_index                                                                       0x02F1       1
+tx_counter                                                                        0x02F2       1
+input                                                                             0x02F3       1
+_seed                                                                             0x02F4       4
+_lcd_x                                                                            0x02F8       1
+_lcd_y                                                                            0x02F9       1
+_lcd_maxx                                                                         0x02FA       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+j                                                                                 R4,R5        2
+index                                                                             R6,R7        2
+d1                                                                                R9           1
+d2                                                                                R8           1
+d3                                                                                R11          1
+crc                                                                               R12,R13      2
+rx_wr_index                                                                       R10          1
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x0008E     37
+getchar                                                                           0x000B3     31
+usart_tx_isr                                                                      0x000D2     36
+putchar                                                                           0x000F6     41
+timer0_ovf_isr                                                                    0x0018F     93
+main                                                                              0x001EC    195
+atoi                                                                              0x002AF     55
+itoa                                                                              0x002E6     46
+strcpy                                                                            0x00314     13
+strlen                                                                            0x00321     12
+strlenf                                                                           0x0032D     13
+_lcd_write_nibble_G102                                                            0x0033A     20
+_lcd_write_data                                                                   0x0034E     12
+lcd_gotoxy                                                                        0x0035A     17
+lcd_clear                                                                         0x0036B     14
+lcd_putchar                                                                       0x00379     32
+lcd_puts                                                                          0x00399     17
+lcd_init                                                                          0x003AA     42
+put_buff_G103                                                                     0x003D4     64
+_print_G103                                                                       0x00414    308
+sprintf                                                                           0x00548     52
+isdigit                                                                           0x0057C      9
+isspace                                                                           0x00585     11
